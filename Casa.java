@@ -8,6 +8,9 @@ public class Casa
     Square pared = new Square();
     
    //Constructor
+    /**
+     * Esto nos permite construir un nuevo objeto solicitado
+     */
     Casa()
     {
         ventana = new Circle();
@@ -16,6 +19,9 @@ public class Casa
         pared = new Square();
     }
     
+    /**
+     * Este metodo Nos permite dibujar las figuras geometricas
+     */
     void dibujate()
     {
      ventana.makeVisible();
@@ -24,6 +30,9 @@ public class Casa
      pared.makeVisible();
     }
     
+    /**
+     * Este metodo nos dibuja la casa con las figuras geometricas
+     */
     void ordenate()
     {
         
@@ -60,6 +69,9 @@ public class Casa
         ventana.moveDown();
     }
     
+    /**
+     *Dibuja casa que sigue 
+     */
     void ordenate2()
     {
         pared.changeColor("green");
@@ -100,7 +112,6 @@ public class Casa
         techo.changeSize(40,95);
         ventana.changeColor("red");
         ventana.changeSize(10);
-        ventana.moveRight();
         ventana.moveRight();
         ventana.moveRight();
         ventana.moveRight();
